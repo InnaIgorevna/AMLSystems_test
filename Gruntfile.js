@@ -73,6 +73,7 @@ module.exports = function(grunt) {
             "fonts/**/*.{woff,woff2}",
             "img/**/*.{png,jpg,gif,svg}",
             "js/**/*.js",
+            "css/**/bootstrap*.css",
             "*.html"
           ],
           dest: "./build"
@@ -89,6 +90,13 @@ module.exports = function(grunt) {
         files: [{
           expand: true,
           src: ["js/*.js"],
+          dest: "./build"
+        }]
+      },
+      bootstrap: {
+        files: [{
+          expand: true,
+          src: ["bootstrap*.css"],
           dest: "./build"
         }]
       }
