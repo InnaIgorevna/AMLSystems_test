@@ -2,37 +2,44 @@ nav{
   display: inline-block;
   vertical-align: top;
   background: #00AA00;
+  padding-top: 10px;
 }
 
-.icon-search{
-  background: #f1f1f1;
-  border-radius: 5px;
-  margin-left: 17px;
-  height: 36px;
-  margin-top: 5px;
-  padding: 10px 10px;
+.navbar-brand {
+  padding: 0;
+}
+
+.navbar-header {
+  float: left;
+  margin-bottom: 10px;
 }
 
 .glyphicon-align-justify{
   color: #000000;
 }
 
+.navbar-header,
+.icon-search{
+  background: #f1f1f1;
+  border-radius: 5px;
+  width: 40px;
+  height: 40px;
+  padding: 10px 10px;
+}
+
 .navbar-header a:active{
   color: #afb1b0;
-}
-
-.btn-group>.btn:first-child {
-  margin-top: 6px;
-}
-
-.breadcrumb{
-  margin-top: 6px;
-  margin-bottom: 0;
 }
 
 .navbar-brand a{
   display: block;
   padding: 0;
+}
+
+.breadcrumb{
+  padding: 15px 15px;
+  height: 40px;
+  margin: 0 15px 10px 15px;
 }
 
 .shape a{
@@ -46,14 +53,47 @@ nav{
   margin-right: 10px;
 }
 
+.btn {
+  padding: 10px 10px;
+}
+
+.dropdown-menu{
+  width: 250px;
+  padding: 0;
+}
+
+.dropdown-menu .glyphicon{
+  margin-right: 10px;
+}
+
+.dropdown-menu>li>a {
+  padding: 5px;
+}
+
+.dropdown-menu a{
+  border: 1px solid #e6e5e5;
+}
+
+
+
 
 /*Поле поиска выпадающего*/
 
 .form-menu a{
   display: block;
+  height: 35px;
   background: #f1bca2;
-  padding: 7px 0 7px 0;
+  padding: 10px 0 7px 0;
   text-align: center;
+}
+
+.form-search input{
+  height: 35px;
+}
+
+.form-search .dropdown-menu{
+  width: 150px;
+  margin-left: 15px;
 }
 
 .form-search .glyphicon-search{
