@@ -3,182 +3,279 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="widdiv=device-widdiv, initial-scale=1">
   <title>AMLSystems_test</title>
 
   <!-- Bootstrap -->
   <link href="css/bootstrap.min.css" type="text/css" rel="stylesheet">
   <link href="css/style.css" type="text/css" rel="stylesheet">
-
-  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-  <!--[if lt IE 9]>
-  <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-  <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.js"></script>
-
-  <![endif]-->
 </head>
-  <body>
-    <div class="container">
-      <nav class="navbar-collapse collapse">
-        <div class="navbar-header">
-          <a class="glyphicon glyphicon-align-justify navbar-brand" href="#"></a>
-        </div>
 
-        <ul class="breadcrumb col-lg-8">
-          <li><a href="#">Главная</a></li>
-          <li><a href="#">2013</a></li>
-          <li class="active">Ноябрь</li>
+<body>
+  <div class="container">
+    <nav class="navbar-collapse collapse">
+      <div class="navbar-header">
+        <a href="#" class="glyphicon glyphicon-align-justify navbar-brand"></a>
+      </div>
+
+      <ul class="breadcrumb col-lg-8">
+        <li><a href="#">Главная</a></li>
+        <li><a href="#">2013</a></li>
+        <li class="active">Ноябрь</li>
+      </ul>
+
+      <div class="glyphicon glyphicon-search navbar-brand icon-search"></div>
+
+      <div class="btn-group pull-right">
+        <button type="submit" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+          Районы Новосибирской области
+          <div class="caret"></div>
+        </button>
+        <ul class="dropdown-menu">
+          <li><a href="#">Dropdown ссылка</a></li>
+          <li><a href="#">Dropdown ссылка</a></li>
+          <li><a href="#">Dropdown ссылка</a></li>
         </ul>
+      </div>
+    </nav>
 
-        <div class="glyphicon glyphicon-search navbar-brand icon-search"></div>
-
-        <div class="btn-group pull-right">
-          <button type="submit" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
-            Районы Новосибирской области
-            <span class="caret"></span>
-          </button>
-          <ul class="dropdown-menu">
-            <li><a href="#">Dropdown ссылка</a></li>
-            <li><a href="#">Dropdown ссылка</a></li>
-            <li><a href="#">Dropdown ссылка</a></li>
-          </ul>
-        </div>
-      </nav>
-
-      <form class="form-search">
-        <div class="row navbar-collapse collapse col-lg-2 form-menu">
-          <a id="drop1" href="#" class="dropdown-toggle" data-toggle="dropdown">
-            По разделу
-            <span class="caret"></span>
-          </a>
-          <ul class="dropdown-menu">
-            <li><a href="#">Текст подпункта</a></li>
-            <li><a href="#">Текст подпункта</a></li>
-            <li><a href="#">Текст подпункта</a></li>
-          </ul>
-        </div>
-
-        <input type="text" class="form-control col-lg-9">
-        <button type="submit" class="glyphicon glyphicon-search">Найти</button>
-      </form>
-
-      <div class="container col-lg-2 pull-left shape">
-        <div class="row">
-          <ul class="navbar navbar-default">
-            <li><a href="#"><i class="glyphicon glyphicon-tree-conifer"></i>Экология</a></li>
-            <li><a href="#"><i class="glyphicon glyphicon-fire"></i>Документы</a></li>
-            <li><a href="#"><i class="glyphicon glyphicon-tint"></i>Водоснабжение</a></li>
-            <li><a href="#"><i class="glyphicon glyphicon-leaf"></i>Экология </a></li>
-          </ul>
-        </div>
+    <form class="form-search">
+      <div class="row navbar-collapse collapse col-lg-2 form-menu">
+        <a id="drop1" href="#" class="dropdown-toggle" data-toggle="dropdown">
+          По разделу
+          <div class="caret"></div>
+        </a>
+        <ul class="dropdown-menu">
+          <li><a href="#">Текст подпункта</a></li>
+          <li><a href="#">Текст подпункта</a></li>
+          <li><a href="#">Текст подпункта</a></li>
+        </ul>
       </div>
 
-      <div class="container col-lg-8 pull-right">
-        <div class="row">
-          <table class="table table-bordered table-condensed table-hover shadow">
-            <thead class="navbar navbar-inverse">
-            <tr>
-              <th class="col-lg-4">Участок - адрес</th>
-              <th class="col-lg-1">Л/с</th>
-              <th class="col-lg-1">Тариф</th>
-              <th class="col-lg-2" colspan="2">Оплаты в этом месяце</th>
-              <th class="col-lg-1">Баланс</th>
-            </tr>
-            </thead>
-            <tbody class="shadow">
-            <tr >
-              <td>Ленинский район</td>
-              <td>1 500</td>
-              <td>544 654</td>
-              <td>545</td>
-              <td>100%</td>
-              <td>544 545</td>
-            </tr>
-            </tbody>
+      <input type="text" class="form-control col-lg-9">
+      <button type="submit" class="glyphicon glyphicon-search">Найти</button>
+    </form>
 
-            <table class="table table-bordered table-condensed table-hover shadow table-inner pull-right">
-              <tbody>
-              <tr>
-                <td class="cell-name col-lg-4">Немировича-Данченко</td>
-                <td class="col-lg-2">1 500</td>
-                <td class="col-lg-2">544 654</td>
-                <td class="col-lg-2">545</td>
-                <td class="col-lg-2">50%</td>
-                <td class="col-lg-2">544 545</td>
-              </tr>
-              </tbody>
-              <tbody>
-              <tr>
-                <td  class="cell-name">Геодезическая</td>
-                <td>1 500</td>
-                <td>544 654</td>
-                <td>545</td>
-                <td>50%</td>
-                <td>544 545</td>
-              </tr>
-              </tbody>
-            </table>
-          </table>
-        </div>
+    <div class="container col-lg-2 pull-left shape">
+      <div class="row">
+        <ul class="navbar navbar-default">
+          <li><a href="#"><i class="glyphicon glyphicon-tree-conifer"></i>Экология</a></li>
+          <li><a href="#"><i class="glyphicon glyphicon-fire"></i>Документы</a></li>
+          <li><a href="#"><i class="glyphicon glyphicon-tint"></i>Водоснабжение</a></li>
+          <li><a href="#"><i class="glyphicon glyphicon-leaf"></i>Экология </a></li>
+        </ul>
       </div>
+    </div>
 
-
-      <!--vvvvvvvvvvvvvvvvv-->
-      <div class="container col-lg-8 pull-right map-officer">
-        <div class="row">
-          <h4>Карточки сотрудников ЖЭУ не получивших оскар</h4>
-
-          <div class="col-lg-3  col-lg-offset-right-1 navbar navbar-default card">
-            <p><strong>Данилко Игорь Ивонович</strong></p>
-            <div class="position">
-              <div class="glyphicon glyphicon-user"></div>
-              <div class="pull-right text">
-                <p>Электрогазосварщик</p>
-                <p>Участок №10</p>
-              </div>
-            </div>
-            <div class="glyphicon glyphicon-earphone"> 8-925-111-11-11</div>
-            <div class="glyphicon glyphicon-globe"> dfsfi@gmail</div>
-            <button type="submit" class="btn btn-danger">Уволен</button>
-            <button type="submit" class="btn btn-info">Выдать Оскар</button>
+    <div class="container col-lg-8 pull-right">
+      <div class="row">
+        <div class="table">
+          <div class="header">
+            <div>Участок - адрес</div>
+            <div>Л/с</div>
+            <div>Тариф</div>
+            <div>Оплаты в этом месяце</div>
+            <div>Баланс</div>
           </div>
-
-
-          <div class="col-lg-3  col-lg-offset-1 navbar navbar-default card">
-            <p><strong>Данилко Игорь Ивонович</strong></p>
-            <div class="position">
-              <div class="glyphicon glyphicon-user"></div>
-              <div class="pull-right text">
-                <p>Электрогазосварщик</p>
-                <p>Участок №10</p>
+            <div class="clickable table-row" data-toggle="collapse" data-target=".row1-1">
+                <div><strong>Ленинский район</strong></div>
+                <div>1 500</div>
+                <div>544 654</div>
+                <div class="right-border">545</div>
+                <div>100%</div>
+                <div>544 545</div>
               </div>
-            </div>
-            <div class="glyphicon glyphicon-earphone"> 8-925-111-11-11</div>
-            <div class="glyphicon glyphicon-globe"> dfsfi@gmail</div>
-            <button type="submit" class="btn btn-danger">Уволен</button>
-            <button type="submit" class="btn btn-info">Выдать Оскар</button>
-          </div>
-
-          <div class="col-lg-3  col-lg-offset-1 navbar navbar-default card">
-            <p><strong>Данилко Игорь Ивонович</strong></p>
-            <div class="position">
-              <div class="glyphicon glyphicon-user"></div>
-              <div class="pull-right text">
-                <p>Электрогазосварщик</p>
-                <p>Участок №10</p>
+              <div class="table-inner-1 collapse row1-1" data-toggle="collapse" data-target=".row2-1">
+                <div>Немировича-Данченко</div>
+                <div>1 500</div>
+                <div>544 654</div>
+                <div>545</div>
+                <div>50%</div>
+                <div>544 545</div>
               </div>
+                <div class="table-inner-2 collapse row2-1">
+                  <div>КВ</div>
+                  <div>ФИО</div>
+                  <div>Л/с</div>
+                  <div>Льготы</div>
+                  <div>Задолжность</div>
+                </div>
+                <div class="table-inner-2 collapse row2-1">
+                  <div>1</div>
+                  <div>Ромашкова Юля Михайловна</div>
+                  <div>544 654</div>
+                  <div>545</div>
+                  <div>545</div>
+                </div>
+                <div class="table-inner-2 collapse row2-1">
+                  <div>2</div>
+                  <div>Селедкин Василий Ивановичь</div>
+                  <div>544 654</div>
+                  <div>545</div>
+                  <div>545</div>
+                </div>
+                <div class="table-inner-2 total collapse row2-1 dropup">
+                  <div>Оплачено в этом месяце: 444 444.44 (50%) | Не оплачено: 444 444.44</div>
+                  <div><span class="caret"></span></div>
+                </div>
+              <div class="table-inner-1 collapse row1-1" data-toggle="collapse" data-target=".row2-2">
+                <div>Солнечный луч</div>
+                <div>1 500</div>
+                <div>544 654</div>
+                <div>545</div>
+                <div>50%</div>
+                <div>544 545</div>
+              </div>
+                <div class="table-inner-2 collapse row2-2">
+                  <div>КВ</div>
+                  <div>ФИО</div>
+                  <div>Л/с</div>
+                  <div>Льготы</div>
+                  <div>Задолжность</div>
+                </div>
+                <div class="table-inner-2 collapse row2-2">
+                  <div>1</div>
+                  <div>Ромашкова Юля Михайловна</div>
+                  <div>544 654</div>
+                  <div>545</div>
+                  <div>545</div>
+                </div>
+                <div class="table-inner-2 collapse row2-2">
+                  <div>2</div>
+                  <div>Селедкин Василий Ивановичь</div>
+                  <div>544 654</div>
+                  <div>545</div>
+                  <div>545</div>
+                </div>
+              <div class="table-inner-1 collapse row1-1" data-toggle="collapse" data-target=".row2-3">
+                <div>Титова</div>
+                <div>1 500</div>
+                <div>544 654</div>
+                <div>545</div>
+                <div>50%</div>
+                <div>544 545</div>
+              </div>
+                <div class="table-inner-2 collapse row2-3">
+                  <div>КВ</div>
+                  <div>ФИО</div>
+                  <div>Л/с</div>
+                  <div>Льготы</div>
+                  <div>Задолжность</div>
+                </div>
+                <div class="table-inner-2 collapse row2-3">
+                  <div>1</div>
+                  <div>Ромашкова Юля Михайловна</div>
+                  <div>544 654</div>
+                  <div>545</div>
+                  <div>545</div>
+                </div>
+                <div class="table-inner-2 collapse row2-3">
+                  <div>2</div>
+                  <div>Селедкин Василий Ивановичь</div>
+                  <div>544 654</div>
+                  <div>545</div>
+                  <div>545</div>
+                </div>
+
+            <div class="clickable table-row" data-toggle="collapse" data-target=".row1-2">
+              <div><strong>Кировский район</strong></div>
+              <div>1 500</div>
+              <div>544 654</div>
+              <div>545</div>
+              <div>100%</div>
+              <div>544 545</div>
             </div>
-            <div class="glyphicon glyphicon-earphone"> 8-925-111-11-11</div>
-            <div class="glyphicon glyphicon-globe"> dfsfi@gmail</div>
-            <button type="submit" class="btn btn-danger">Уволен</button>
-            <button type="submit" class="btn btn-info">Выдать Оскар</button>
+              <div class="table-inner-1 collapse row1-2" data-toggle="collapse" data-target=".row2-4">
+                <div>Спортивная</div>
+                <div>1 500</div>
+                <div>544 654</div>
+                <div>545</div>
+                <div>50%</div>
+                <div>544 545</div>
+              </div>
+                <div class="table-inner-2 collapse row2-4">
+                  <div>КВ</div>
+                  <div>ФИО</div>
+                  <div>Л/с</div>
+                  <div>Льготы</div>
+                  <div>Задолжность</div>
+                </div>
+                <div class="table-inner-2 collapse row2-4">
+                  <div>1</div>
+                  <div>Романчук Тюльпана Михайловна</div>
+                  <div>544 654</div>
+                  <div>545</div>
+                  <div>545</div>
+                </div>
+                <div class="table-inner-2 collapse row2-4">
+                  <div>2</div>
+                  <div>Шишкин Роман Ивановичь</div>
+                  <div>544 654</div>
+                  <div>545</div>
+                  <div>545</div>
+                </div>
+
           </div>
         </div>
       </div>
     </div>
 
-    <script src="http://code.jquery.com/jquery-latest.js"></script>
-    <script src="js/bootstrap.min.js"></script>
+
+    <!--vvvvvvvvvvvvvvvvv-->
+    <div class="container col-lg-8 pull-right map-officer">
+      <div class="row">
+        <h4>Карточки сотрудников ЖЭУ не получивших оскар</h4>
+
+        <div class="col-lg-3  col-lg-offset-right-1 navbar navbar-default card">
+          <p><strong>Данилко Игорь Ивонович</strong></p>
+          <div class="position">
+            <div class="glyphicon glyphicon-user"></div>
+            <div class="pull-right text">
+              <p>Электрогазосварщик</p>
+              <p>Участок №10</p>
+            </div>
+          </div>
+          <div class="glyphicon glyphicon-earphone"> 8-925-111-11-11</div>
+          <div class="glyphicon glyphicon-globe"> dfsfi@gmail</div>
+          <button type="submit" class="btn btn-danger">Уволен</button>
+          <button type="submit" class="btn btn-info">Выдать Оскар</button>
+        </div>
+
+
+        <div class="col-lg-3  col-lg-offset-1 navbar navbar-default card">
+          <p><strong>Данилко Игорь Ивонович</strong></p>
+          <div class="position">
+            <div class="glyphicon glyphicon-user"></div>
+            <div class="pull-right text">
+              <p>Электрогазосварщик</p>
+              <p>Участок №10</p>
+            </div>
+          </div>
+          <div class="glyphicon glyphicon-earphone"> 8-925-111-11-11</div>
+          <div class="glyphicon glyphicon-globe"> dfsfi@gmail</div>
+          <button type="submit" class="btn btn-danger">Уволен</button>
+          <button type="submit" class="btn btn-info">Выдать Оскар</button>
+        </div>
+
+        <div class="col-lg-3  col-lg-offset-1 navbar navbar-default card">
+          <p><strong>Данилко Игорь Ивонович</strong></p>
+          <div class="position">
+            <div class="glyphicon glyphicon-user"></div>
+            <div class="pull-right text">
+              <p>Электрогазосварщик</p>
+              <p>Участок №10</p>
+            </div>
+          </div>
+          <div class="glyphicon glyphicon-earphone"> 8-925-111-11-11</div>
+          <div class="glyphicon glyphicon-globe"> dfsfi@gmail</div>
+          <button type="submit" class="btn btn-danger">Уволен</button>
+          <button type="submit" class="btn btn-info">Выдать Оскар</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="http://code.jquery.com/jquery-latest.js"></script>
+  <script src="js/bootstrap.min.js"></script>
   </body>
 </html>
